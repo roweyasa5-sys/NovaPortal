@@ -7,11 +7,11 @@ import {
   Settings as SettingsIcon,
   Layers
 } from 'lucide-react';
-import { Starfield } from './src/components/Starfield';
-import { Navbar } from './src/components/Navbar';
-import { SearchBar } from './src/components/SearchBar';
-import { SettingsPanel } from './src/components/SettingsPanel';
-import contentData from './src/data/content.json';
+import { Starfield } from './components/Starfield';
+import { Navbar } from './components/Navbar';
+import { SearchBar } from './components/SearchBar';
+import { SettingsPanel } from './components/SettingsPanel';
+import contentData from './data/content.json';
 
 const DEFAULT_SETTINGS = {
   panicKey: 'G',
