@@ -7,17 +7,17 @@ import {
   Settings as SettingsIcon,
   Layers
 } from 'lucide-react';
-import { Starfield } from './components/Starfield';
-import { Navbar } from './components/Navbar';
-import { SearchBar } from './components/SearchBar';
-import { SettingsPanel } from './components/SettingsPanel';
-import contentData from './data/content.json';
+import { Starfield } from './src/components/Starfield';
+import { Navbar } from './src/components/Navbar';
+import { SearchBar } from './src/components/SearchBar';
+import { SettingsPanel } from './src/components/SettingsPanel';
+import contentData from './src/data/content.json';
 
 const DEFAULT_SETTINGS = {
   panicKey: 'G',
   panicUrl: 'https://classroom.google.com',
   cloakTitle: 'NovaPortal',
-  cloakIcon: '/favicon.ico',
+  cloakIcon: 'https://www.google.com/favicon.ico',
   searchEngine: 'google',
   theme: 'dark',
   backgroundUrl: '',
