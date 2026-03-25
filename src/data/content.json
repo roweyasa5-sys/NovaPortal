@@ -1,0 +1,118 @@
+{
+  "games": [
+    {
+      "id": "2048",
+      "name": "2048",
+      "url": "https://play2048.co/",
+      "icon": "Hash",
+      "category": "game",
+      "description": "Join the numbers and get to the 2048 tile!"
+    },
+    {
+      "id": "tetris",
+      "name": "Tetris",
+      "url": "https://tetris.com/play-tetris",
+      "icon": "Grid3X3",
+      "category": "game",
+      "description": "The classic block-stacking puzzle game."
+    },
+    {
+      "id": "slope",
+      "name": "Slope",
+      "url": "https://krunker.io/",
+      "icon": "Zap",
+      "category": "game",
+      "description": "Fast-paced action game."
+    },
+    {
+      "id": "minecraft-classic",
+      "name": "Minecraft Classic",
+      "url": "https://classic.minecraft.net/",
+      "icon": "Box",
+      "category": "game",
+      "description": "The original Minecraft in your browser."
+    },
+    {
+      "id": "chess",
+      "name": "Chess.com",
+      "url": "https://www.chess.com/play/online",
+      "icon": "Crown",
+      "category": "game",
+      "description": "Play chess against people or AI."
+    },
+    {
+      "id": "cookie-clicker",
+      "name": "Cookie Clicker",
+      "url": "https://orteil.dashnet.org/cookieclicker/",
+      "icon": "CircleDot",
+      "category": "game",
+      "description": "The ultimate idle game."
+    },
+    {
+      "id": "agar-io",
+      "name": "Agar.io",
+      "url": "https://agar.io/",
+      "icon": "Circle",
+      "category": "game"
+    },
+    {
+      "id": "slither-io",
+      "name": "Slither.io",
+      "url": "https://slither.io/",
+      "icon": "Snake",
+      "category": "game"
+    },
+    {
+      "id": "paper-io",
+      "name": "Paper.io 2",
+      "url": "https://paper-io.com/",
+      "icon": "Square",
+      "category": "game"
+    },
+    {
+      "id": "little-alchemy",
+      "name": "Little Alchemy 2",
+      "url": "https://littlealchemy2.com/",
+      "icon": "FlaskConical",
+      "category": "game"
+    }
+
+  ],
+  "apps": [
+    {
+      "id": "google",
+      "name": "Google",
+      "url": "https://www.google.com/search?igu=1",
+      "icon": "Search",
+      "category": "app"
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "url": "https://discord.com/app",
+      "icon": "MessageSquare",
+      "category": "app"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "url": "https://www.youtube.com/embed",
+      "icon": "Youtube",
+      "category": "app"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "url": "https://open.spotify.com/embed",
+      "icon": "Music",
+      "category": "app"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com",
+      "icon": "Github",
+      "category": "app"
+    }
+  ]
+}
