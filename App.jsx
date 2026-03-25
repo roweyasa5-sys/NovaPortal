@@ -7,11 +7,11 @@ import {
   Settings as SettingsIcon,
   Layers
 } from 'lucide-react';
-import { Starfield } from './components/Starfield';
-import { Navbar } from './components/Navbar';
-import { SearchBar } from './components/SearchBar';
-import { SettingsPanel } from './components/SettingsPanel';
-import contentData from './data/content.json';
+import { Starfield } from './src/components/Starfield';
+import { Navbar } from './src/components/Navbar';
+import { SearchBar } from './src/components/SearchBar';
+import { SettingsPanel } from './src/components/SettingsPanel';
+import contentData from './src/data/content.json';
 
 const DEFAULT_SETTINGS = {
   panicKey: 'G',
@@ -92,20 +92,11 @@ export default function App() {
   }, [tabs, activeTabId]);
 
   const handleOpenApp = (app) => {
-    const existingTab = tabs.find(t => t.url === app.url);
-    if (existingTab) {
-      setActiveTabId(existingTab.id);
-      return;
-    }
-
-    const newTab = {
-      id: Math.random().toString(36).substr(2, 9),
-      title: app.name,
-      url: app.url,
-      type: app.category === 'game' ? 'game' : 'app'
-    };
-    setTabs([...tabs, newTab]);
-    setActiveTabId(newTab.id);
+    setTabs(prev => prev.map(tab => 
+      tab.id === activeTabId 
+        ? { ...tab, title: app.name, url: app.url, type: app.category === 'game' ? 'game' : 'app' } 
+        : tab
+    ));
   };
 
   const handleSearch = (query) => {
@@ -123,14 +114,13 @@ export default function App() {
       url = `${engineUrls[settings.searchEngine]}${encodeURIComponent(query)}`;
     }
 
-    const newTab = {
-      id: Math.random().toString(36).substr(2, 9),
-      title: query,
-      url: url,
-      type: 'browser'
-    };
-    setTabs([...tabs, newTab]);
-    setActiveTabId(newTab.id);
+    // Update the current tab instead of creating a new one
+    setTabs(prev => prev.map(tab => 
+      tab.id === activeTabId 
+        ? { ...tab, title: query, url: url, type: 'browser' }
+        : tab
+    ));
+    setView('browser');
   };
 
   const activeTab = tabs.find(t => t.id === activeTabId);
